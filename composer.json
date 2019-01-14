@@ -11,5 +11,7 @@
     "psr-4": {
       "SoftwareTarget\\Task\\": ""
     }
-  }
+  },
+  "version": "1.0.0",
+  "type": "magento2-module"
 }
