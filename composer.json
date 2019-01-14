@@ -1,7 +1,6 @@
 {
   "name": "softwaretarget/task",
-  "description": "Magento 2 recrutment task",
-  "type": "library",
+  "description": "Magento 2 recruitment task",
   "license": "MIT",
 
   "autoload": {
@@ -12,6 +11,6 @@
       "SoftwareTarget\\Task\\": ""
     }
   },
-  "version": "1.0.0",
+  "version": "1.0.2",
   "type": "magento2-module"
 }
