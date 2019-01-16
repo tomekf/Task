@@ -1,0 +1,15 @@
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="Magento\Checkout\Block\Checkout\LayoutProcessor">
+        <plugin name="add_custom_field_checkout_form" type="SoftwareTarget\Task\Model\Plugin\Checkout\LayoutProcessor" sortOrder="100"/>
+    </type>
+    <type name="Magento\Checkout\Model\ShippingInformationManagement">
+        <plugin name="save_to_quote_table" type="SoftwareTarget\Task\Model\Plugin\Checkout\ShippingInformationManagementPlugin" sortOrder="10"/>
+    </type>
+    <virtualType name="Magento\Sales\Model\ResourceModel\Order\Grid">
+        <arguments>
+            <argument name="columns" xsi:type="array">
+                <item name="external_order_id" xsi:type="string">sales_order.external_order_id</item>
+            </argument>
+        </arguments>
+    </virtualType>
+</config>
