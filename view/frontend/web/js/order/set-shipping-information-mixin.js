@@ -1,8 +1,3 @@
-/**
- * @author aakimov
- */
-/*jshint browser:true jquery:true*/
-/*global alert*/
 define([
     'jquery',
     'mage/utils/wrapper',
@@ -18,7 +13,6 @@ define([
                 shippingAddress['extension_attributes'] = {};
             }
 
-            shippingAddress['extension_attributes']['delivery_date'] = jQuery('[name="delivery_date"]').val();
             shippingAddress['extension_attributes']['external_order_id'] = jQuery('[name="external_order_id"]').val();
 
             return originalAction();

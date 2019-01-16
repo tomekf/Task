@@ -11,6 +11,6 @@ class ExternalOrder extends AbstractOrder
      */
     public function getExternalOrderId(): string
     {
-        return $this->getOrder()->getData('external_order_id');
+        return (string) $this->getOrder()->getData('external_order_id');
     }
 }

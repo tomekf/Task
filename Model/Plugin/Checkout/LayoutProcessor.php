@@ -3,9 +3,7 @@
 namespace SoftwareTarget\Task\Model\Plugin\Checkout;
 
 use Magento\Framework\View\Element\Template\Context;
-use Magento\CheckoutAgreements\Model\ResourceModel\Agreement\CollectionFactory;
 use Magento\Checkout\Model\Session;
-use Magento\Customer\Model\AddressFactory;
 use Magento\Checkout\Block\Checkout\LayoutProcessor as CheckoutLayoutProcessor;
 
 class LayoutProcessor
@@ -34,13 +32,10 @@ class LayoutProcessor
 
     public function __construct(
         Context $context,
-        CollectionFactory $agreementCollectionFactory,
-        Session $checkoutSession,
-        AddressFactory $customerAddressFactory
+        Session $checkoutSession
     ) {
         $this->scopeConfig = $context->getScopeConfig();
         $this->checkoutSession = $checkoutSession;
-        $this->customerAddressFactory = $customerAddressFactory;
     }
     /**
      * @param \Magento\Checkout\Block\Checkout\LayoutProcessor $subject

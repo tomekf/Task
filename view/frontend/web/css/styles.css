@@ -1,0 +1,7 @@
+.external-order-id {
+    display: inline-block;
+    width: 80px;
+    white-space: nowrap;
+    overflow: hidden !important;
+    text-overflow: ellipsis;
+}

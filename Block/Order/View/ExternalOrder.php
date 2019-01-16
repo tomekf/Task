@@ -11,6 +11,6 @@ class ExternalOrder extends Info
      */
     public function getExternalOrderId(): string
     {
-        return $this->getOrder()->getData('external_order_id');
+        return (string)$this->getOrder()->getData('external_order_id');
     }
 }

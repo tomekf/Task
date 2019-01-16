@@ -1,0 +1,13 @@
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <head>
+        <css src="SoftwareTarget_Task::css/styles.css"/>
+    </head>
+    <body>
+        <referenceBlock name="sales.order.history.extra.column.header">
+            <block class="Magento\Framework\View\Element\Template" name="sales.order.history.external_order_id_header" template="SoftwareTarget_Task::order/history/external_columnheader.phtml"/>
+        </referenceBlock>
+        <referenceBlock name="sales.order.history.extra.container">
+            <block class="Magento\Framework\View\Element\Template" name="sales.order.histor.external_order_id_header" template="SoftwareTarget_Task::order/history/external_columndata.phtml"/>
+        </referenceBlock>
+    </body>
+</page>
