@@ -12,4 +12,4 @@ features:
 - field is visible in order details - adminhtml
 - field is visible in 'My Orders' - frontend
 - field is visible in Orders - adminhtml (grid)
-- filed is validate by server side and js
+- field is validate by server side and js
